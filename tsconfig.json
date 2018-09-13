@@ -3,12 +3,19 @@
     "outDir": "./dist/",
     "sourceMap": true,
     "strict": true,
+    "noImplicitAny": false,
     "module": "es6",
     "target": "es5",
-    "jsx": "react",
-    "allowJs": true
+    "jsx": "preserve",
+    "moduleResolution": "Node",
+    "types": [
+      "inferno"
+    ]
   },
   "include": [
     "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
